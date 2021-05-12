@@ -8,6 +8,12 @@ public class Principal {
         livro1.tituloLivro = "Clean Code";
         livro1.numPaginas = 456;
         
-        System.out.println(livro1.tituloLivro + "\t" + livro1.nomeAutor + "\t" + livro1.numPaginas);
+        Livro livro2 = new Livro();
+        livro2.nomeAutor = "Kai-fu Lee";
+        livro2.tituloLivro = "Inteligência Artificial";
+        livro2.numPaginas = 292;
+        
+        System.out.println("Título: " + livro1.tituloLivro + "\t" + "Autor: " + livro1.nomeAutor + "\t" + "Num. páginas: " + livro1.numPaginas);
+        System.out.println("Título: " + livro2.tituloLivro + "\t" + "Autor: " + livro2.nomeAutor + "\t" + "Num. páginas: " + livro2.numPaginas);
     }
 }
