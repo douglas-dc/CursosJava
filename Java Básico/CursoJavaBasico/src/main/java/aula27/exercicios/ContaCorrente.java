@@ -1,5 +1,5 @@
 
-package org.aula27.exercicios;
+package aula27.exercicios;
 
 public class ContaCorrente {
     int numeroConta;

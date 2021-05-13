@@ -1,5 +1,5 @@
 
-package org.aula25.metodos;
+package aula25.metodos;
 
 public class Carro {
     String marca;

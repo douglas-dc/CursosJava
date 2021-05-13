@@ -1,5 +1,5 @@
 
-package org.aula27.exercicios;
+package aula27.exercicios;
 
 public class Principal {
     public static void main(String[] args) {
