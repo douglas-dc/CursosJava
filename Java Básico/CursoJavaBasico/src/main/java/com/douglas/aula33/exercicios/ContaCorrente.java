@@ -57,7 +57,7 @@ public class ContaCorrente {
             System.out.println("Saque realizado com sucesso.");
             return true;
         } else if (especial) {
-            double limite = limiteEspecial - saldo; 
+            double limite = limiteEspecial + saldo; 
             if (limite >= valor) {
                 saldo -= valor;
                 System.out.println("Saque realizado com sucesso.");
@@ -67,7 +67,6 @@ public class ContaCorrente {
         System.out.println("Saldo insuficiente para realizar operação.");
         return false;
     }
-    
     
     public void depositar(double valor) {
         saldo += valor; 

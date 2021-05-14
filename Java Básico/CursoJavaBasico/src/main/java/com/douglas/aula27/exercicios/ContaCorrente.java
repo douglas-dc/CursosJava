@@ -14,7 +14,7 @@ public class ContaCorrente {
             System.out.println("Saque realizado com sucesso.");
             return true;
         } else if (especial) {
-            double limite = limiteEspecial - saldo; 
+            double limite = limiteEspecial + saldo; 
             if (limite >= valor) {
                 saldo -= valor;
                 System.out.println("Saque realizado com sucesso.");

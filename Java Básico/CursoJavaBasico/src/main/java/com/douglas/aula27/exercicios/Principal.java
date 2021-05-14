@@ -9,7 +9,7 @@ public class Principal {
         conta1.saldo = 1000;
         conta1.especial = true;
         
-        conta1.sacar(2000);
+        conta1.sacar(3000);
         conta1.consultarSaldo();
         conta1.chequeEspecial();
     }
