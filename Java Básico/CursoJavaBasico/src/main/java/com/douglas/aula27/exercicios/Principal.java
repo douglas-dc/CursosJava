@@ -1,5 +1,5 @@
 
-package aula27.exercicios;
+package com.douglas.aula27.exercicios;
 
 public class Principal {
     public static void main(String[] args) {
@@ -9,9 +9,7 @@ public class Principal {
         conta1.saldo = 1000;
         conta1.especial = true;
         
-        conta1.sacar(3500);
-        conta1.consultarSaldo();
-        conta1.depositar(8000);
+        conta1.sacar(2000);
         conta1.consultarSaldo();
         conta1.chequeEspecial();
     }

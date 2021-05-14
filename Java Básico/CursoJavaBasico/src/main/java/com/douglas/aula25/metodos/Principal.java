@@ -1,5 +1,5 @@
 
-package aula25.metodos;
+package com.douglas.aula25.metodos;
 
 public class Principal {
     public static void main(String[] args) {

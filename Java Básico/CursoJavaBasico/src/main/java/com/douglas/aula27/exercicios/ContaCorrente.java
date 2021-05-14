@@ -1,5 +1,5 @@
 
-package aula27.exercicios;
+package com.douglas.aula27.exercicios;
 
 public class ContaCorrente {
     int numeroConta;
@@ -18,15 +18,13 @@ public class ContaCorrente {
             if (limite >= valor) {
                 saldo -= valor;
                 System.out.println("Saque realizado com sucesso.");
-                return true;
-            } else {
-                return false;
+                return true;   
             } 
-        } else {
-            System.out.println("Saldo insuficiente para realizar operação.");
-            return false;
         }
+        System.out.println("Saldo insuficiente para realizar operação.");
+        return false;
     }
+    
     
     void depositar(double valor) {
         saldo += valor; 
