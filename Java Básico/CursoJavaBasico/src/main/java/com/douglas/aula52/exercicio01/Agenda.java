@@ -19,7 +19,6 @@ public class Agenda {
             }
         }
         if (cheia){
-            //lançar exception aqui
             throw new AgendaCheiaException();
         }
     }    
@@ -32,7 +31,6 @@ public class Agenda {
                 }
             }
         }
-        // lançar exception contato não existe
         throw new ContatoNaoExisteException(nome);
     }
 
