@@ -1,9 +1,6 @@
 package com.douglas.estruturadados.vetor;
 
-import java.awt.PageAttributes;
 import java.lang.reflect.Array;
-import java.util.NoSuchElementException;
-import java.util.concurrent.ExecutionException;
 
 public class Lista<T> {
 
@@ -51,7 +48,7 @@ public class Lista<T> {
         return this.tamanho;
     }
 
-    public void aumentaCapacidade() {
+    private void aumentaCapacidade() {
         if (this.tamanho == this.elementos.length) {
             T[] elementosNovos = (T[]) new Object[this.elementos.length * 2];
             for (int i = 0; i < this.elementos.length; i++) {
@@ -87,12 +84,12 @@ public class Lista<T> {
         if (!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida");
         }
-        for (int i = posicao; i < this.tamanho; i++) {
+        for (int i = posicao; i < this.tamanho-1; i++) {
             this.elementos[i] = this.elementos[i + 1];
         }
         this.tamanho--;
     }
-
+    
     /*public int tamanhoDoArray(){
         return elementos.length;
     }*/
@@ -105,16 +102,39 @@ public class Lista<T> {
     //A , B , C , A , D
     //tamanho = 5
     // EXERCÍCIO 02
-    public void ultimoIndice(T elemento) {
+    public int ultimoIndice(T elemento) {
         for (int i = tamanho - 1; i >= 0; i--) {
             if (this.elementos[i].equals(elemento)) {
                 System.out.println(i);
-                return;
+                return i;
             }
         }
-        throw new NoSuchElementException("Elemento não encontrado para " + elemento);
+        System.out.println(-1);
+        return -1;
+        //throw new NoSuchElementException("Elemento não encontrado para " + elemento);
     }
-
+    
+    // EXERCÍCIO 03
+    public void remove(T elemento){
+        int pos = this.busca(elemento);
+        if (pos > -1){
+            this.remove(pos);
+        }
+    }
+    
+    // EXERCÍCIO 04
+    public Object obtem(int posicao){
+        return this.busca(posicao);
+    }
+    
+    // EXERCÍCIO 05
+    public void limpar(){
+        for (int i=0; i < this.tamanho; i++) {
+            this.elementos[i] = null;
+        }
+        this.tamanho = 0;
+    }
+    
     @Override
     public String toString() {
 

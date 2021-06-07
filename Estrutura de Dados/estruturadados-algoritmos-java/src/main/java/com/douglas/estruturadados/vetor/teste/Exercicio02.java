@@ -19,9 +19,9 @@ public class Exercicio02 {
         vetor.adiciona("A");
         vetor.adiciona("E");
         
-        System.out.println(vetor.busca(4));
+        //System.out.println(vetor.busca(4));
         vetor.ultimoIndice("Z");
-        System.out.println(vetor.busca(3));
+        //System.out.println(vetor.busca(3));
         
         
     }
