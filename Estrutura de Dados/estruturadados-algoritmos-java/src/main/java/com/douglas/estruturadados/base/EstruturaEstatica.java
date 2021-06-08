@@ -1,7 +1,7 @@
 
 package com.douglas.estruturadados.base;
 
-public class EstruturaEstatica<T> {
+public abstract class EstruturaEstatica<T> {
 
     protected T[] elementos;
     protected int tamanho;
