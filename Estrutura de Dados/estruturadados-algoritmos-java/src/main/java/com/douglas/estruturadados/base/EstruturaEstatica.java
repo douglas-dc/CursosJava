@@ -1,7 +1,7 @@
 
 package com.douglas.estruturadados.base;
 
-public abstract class EstruturaEstatica<T> {
+public class EstruturaEstatica<T> {
 
     protected T[] elementos;
     protected int tamanho;
@@ -44,6 +44,16 @@ public abstract class EstruturaEstatica<T> {
         this.tamanho++;
 
         return false;
+    }
+    
+    public void remove(int posicao) {
+        if (!(posicao >= 0 && posicao < tamanho)) {
+            throw new IllegalArgumentException("Posição inválida");
+        }
+        for (int i = posicao; i < this.tamanho-1; i++) {
+            this.elementos[i] = this.elementos[i + 1];
+        }
+        this.tamanho--;
     }
     
     protected void aumentaCapacidade() {
