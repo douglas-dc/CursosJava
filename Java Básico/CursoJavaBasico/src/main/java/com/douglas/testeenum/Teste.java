@@ -16,6 +16,6 @@ public class Teste {
         DiaSemana dia3 = DiaSemana.QUARTA;
         
         System.out.println(dia.getValor()); // pega o valor atribuído
-                
+        System.out.println(dia2.getValor());
     }
 }

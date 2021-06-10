@@ -11,7 +11,7 @@ public enum DiaSemana {
     SEXTA(6),
     SABADO(7);
     
-    private int valor;
+    private final int valor;
 
     DiaSemana(int valor) {
         this.valor = valor;
