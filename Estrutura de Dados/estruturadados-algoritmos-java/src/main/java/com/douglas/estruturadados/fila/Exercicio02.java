@@ -38,7 +38,8 @@ public class Exercicio02 {
         filaRegular.add("Pessoa 12");
         filaPrioridade.add("Pessoa 12");
         filaPrioridade.add("Pessoa 13");
-
+        
+        //esse exercício poderia ser feito com contador e transformar os removes em um método
         while (!(filaRegular.isEmpty() || filaPrioridade.isEmpty())) {
             while (!filaPrioridade.isEmpty()) {
                 for (int i = 0; i < MAX_PRIORIDADE && !filaPrioridade.isEmpty(); i++) {
